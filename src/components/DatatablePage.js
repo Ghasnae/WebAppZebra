@@ -49,9 +49,9 @@ const DatatablePage = () => {
         if (e === item.Key || e === item.Key2) {
           res =
             res + moment(item.Date).format("DD/MM/YYYY hh:mm:ss") + "     \n";
-          res = res + item.NbMale + "♂" + item.LigneeM + "    " + "    \n";
+          res = res + item.NbMale + "♂" + item.LigneeM + "    " +"  "+ "Lot:"+item.Lot+"    \n";
           res =
-            res + item.NbFemelle + "♀" + item.LigneeF + "    " + "     \n\n";
+            res + item.NbFemelle + "♀" + item.LigneeF + "    " +"  "+ "Lot:"+item.Lot2+ "     \n\n";
         }
       });
     alert(res);
@@ -66,6 +66,9 @@ const DatatablePage = () => {
             res +
             moment(item.Date).format("DD/MM/YYYY hh:mm:ss") +
             "\n" +
+            "♂" + item.LigneeM +"  "+ "Lot:"+item.LotM+"\n"+
+             "♀"+ item.LigneeF +"  "+"Lot:"+item.LotF+"\n\n" +
+
             item.NbMale +
             "♂" +
             item.NbFemelle +
