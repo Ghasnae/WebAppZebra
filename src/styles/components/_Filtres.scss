@@ -1,0 +1,22 @@
+.filtres{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    color: gray;
+    #filtre{
+        #sup_1{
+            cursor: pointer;
+        }
+        display:inline;
+        border: 1px solid;
+        border-radius: 20px;
+        margin: 8px;
+        padding: 2px;
+        padding-right: 8px;
+        padding-left: 5px;
+
+    }
+    #filtre:hover{
+        background-color: rgba(235, 235, 235, 0.605);
+    }
+}

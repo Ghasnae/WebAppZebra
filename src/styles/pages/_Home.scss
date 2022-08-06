@@ -1,0 +1,13 @@
+.home-container{
+    
+    
+    .grid-sup{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding: 20px;
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: 100% ;
+
+        }
+    }
+}
